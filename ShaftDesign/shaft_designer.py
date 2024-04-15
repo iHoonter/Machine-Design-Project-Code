@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 from . import DE_shaft_stress_criterions
 from . import shaft_point_data
-from . import data_printer
+from ..Common import DataPrinter
 from . import enums as en
 
 @dataclass
@@ -26,7 +26,7 @@ class ShaftDesigner:
 
         Printer object to specify formatting when printing. Default printer is DataPrinter('.3f')
     '''
-    def __init__(self, shaft_data : shaft_point_data.ShaftPointData, printer : data_printer.DataPrinter = data_printer.DataPrinter('.3f'), d_iteration_params : IterationParams | None = None) -> None:
+    def __init__(self, shaft_data : shaft_point_data.ShaftPointData, printer : DataPrinter = DataPrinter('.3f'), d_iteration_params : IterationParams | None = None) -> None:
         self.shaft = shaft_data
         self.printer = printer
 
@@ -55,7 +55,7 @@ class ShaftDesigner:
 
     def yielding(self, importance = 0, conservative = True):
         '''
-        Method for calculate answer using first-cycle yielding
+        Method for calculating answer using first-cycle yielding
 
         Paramters
         ---------

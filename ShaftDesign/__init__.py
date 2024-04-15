@@ -10,7 +10,7 @@ __all__ = [
 from . import materials
 from . import DE_shaft_stress_criterions
 
-from .data_printer import DataPrinter
+from ..Common.data_printer import DataPrinter
 from .enums import LoadType, NotchType, units, SurfaceFinish
 from .shaft_point_data import ShaftPointData
 from .shaft_designer import ShaftDesigner

@@ -1,7 +1,7 @@
 import numpy as np
 
 import shaft_point_data
-import data_printer
+import Common.data_printer as data_printer
 
 class DE_shaft_stress_criterions:
     '''
