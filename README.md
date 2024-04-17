@@ -11,7 +11,7 @@ Create a package of code capable of designing a shaft based on a set of given re
 ## Gear Analysis
 - Input power of 9.5 HP
 - Input speed of 3000 rpm
-- Output speed of 400$\pm$1% rpm
+- Output speed of 400 $\pm$ 1% rpm
 - Helical gears with helix angle $\psi = 30\degree$ and a normal pressure angle $\phi_n = 20\degree$
 - Pinion and gear to operate for 1000 hours at 90% reliability
 - Commercial enclosed unit

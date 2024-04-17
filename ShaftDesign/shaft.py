@@ -13,6 +13,6 @@ class Shaft:
     length : float
         Length of the entire shaft
 
-    points_of_interest : dict[float, ShaftPointData]
+    points_of_interest : dict[float, ShaftPointData] 
         Points at which to analyze the shaft. 
     '''
