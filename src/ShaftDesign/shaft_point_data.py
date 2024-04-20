@@ -24,7 +24,7 @@ class ShaftPointData:
     material : materials.Strengths      # Ultimate and yield strength
     surface_finish : en.SurfaceFinish      # Surface finish condition
 
-    true_fracture : float = None   # True fracture strength for Morrow criterion
+    true_fracture : float | None = None   # True fracture strength for Morrow criterion
 
     # Solve-for-variables (Only one is provided, the other is solved for)
     d : float = 0

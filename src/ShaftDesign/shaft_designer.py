@@ -37,23 +37,23 @@ class ShaftDesigner:
             else:                                   # d0 = 15mm, max error is 5%
                 self.iter_params = IterationParams(d_initial=15, max_error=0.05)
 
-    def Goodman(self, importance = 0):
+    def Goodman(self, importance = 1):
         '''Method to calculate answer using the Goodman criterion'''
         self._begin_solving(criterion=DE_shaft_stress_criterions.Goodman, name="Goodman", importance=importance)
 
-    def Morrow(self, importance = 0):
+    def Morrow(self, importance = 1):
         '''Method to calculate answer using the Morrow criterion'''
         self._begin_solving(criterion=DE_shaft_stress_criterions.Morrow, name="Goodman", importance=importance)
 
-    def Gerber(self, importance = 0):
+    def Gerber(self, importance = 1):
         '''Method to calculate answer using the Gerber criterion'''
         self._begin_solving(criterion=DE_shaft_stress_criterions.Gerber, name="Gerber", importance=importance)
 
-    def SWT(self, importance = 0):
+    def SWT(self, importance = 1):
         '''Method to calculate answer using the SWT criterion'''
         self._begin_solving(criterion=DE_shaft_stress_criterions.SWT, name="SWT", importance=importance)
 
-    def yielding(self, importance = 0, conservative = True):
+    def yielding(self, importance = 1, conservative = True):
         '''
         Method for calculating answer using first-cycle yielding
 
@@ -76,17 +76,17 @@ class ShaftDesigner:
         '''Solves for factor of safety using the provided DE-Criterion'''
         # Calculations
         # ------------
-        self.shaft.Se = self.get_endurance_limit(importance=importance+1)                          # Calculating endurance limit
-        self.shaft.Kf, self.shaft.Kfs = self.get_stress_concentrations(importance=importance+1)    # Calculating fatigue stress concentrations
+        self.shaft.Se = self.get_endurance_limit(importance=importance)                          # Calculating endurance limit
+        self.shaft.Kf, self.shaft.Kfs = self.get_stress_concentrations(importance=importance)    # Calculating fatigue stress concentrations
         self.shaft.n = criterion(self.shaft, **kwargs)                                             # Calculating factor of safety
 
         # Printing
         # --------
-        self.printer.section(f"#--- Solving for n using {name} criterion ---#", importance_level=importance+1)    # Supporting calculations
-        self.printer.show(self.shaft.Se, label="Se = ", importance_level=importance+1)
-        self.printer.show(self.shaft.Kf, label="Kf = ", importance_level=importance+1)
+        self.printer.section(f"#--- Solving for n using {name} criterion ---#", importance_level=importance)    # Supporting calculations
+        self.printer.show(self.shaft.Se, label="Se = ", importance_level=importance)
+        self.printer.show(self.shaft.Kf, label="Kf = ", importance_level=importance)
 
-        self.printer.show(self.shaft.n, importance, label=f"{name}: n = ")                              # Final result
+        self.printer.show(self.shaft.n, importance_level = 0, label=f"{name}: n = ")                              # Final result
 
         return self.shaft.n
 
@@ -113,17 +113,17 @@ class ShaftDesigner:
         self.shaft.d = self.iter_params.d_initial
         MAX_ITER = 100
 
-        self.printer.section(f"#--- Solving for d using {name} ---#", importance_level=importance+1)
+        self.printer.section(f"#--- Solving for d using {name} ---#", importance_level=importance)
 
         iter = 0
-        self.printer.show(self.shaft.d, label=f"Iter {iter}: d = ", importance_level=importance+1)          # Printing first iteration
+        self.printer.show(self.shaft.d, label=f"Iter {iter}: d = ", importance_level=importance)          # Printing first iteration
         while True:
-            self.shaft.Se = self.get_endurance_limit(importance=importance+1)                               # Endurance limit calculation with d guess
-            self.shaft.Kf, self.shaft.Kfs = self.get_stress_concentrations(importance=importance+1)         # Fatigue stress concentrations with d guess
+            self.shaft.Se = self.get_endurance_limit(importance=importance)                               # Endurance limit calculation with d guess
+            self.shaft.Kf, self.shaft.Kfs = self.get_stress_concentrations(importance=importance)         # Fatigue stress concentrations with d guess
             
             new_d = criterion(self.shaft, **kwargs)                                                         # Calculation of new d using criterion
 
-            self.printer.show(new_d, label=f"\nIter {iter+1}: d = ", importance_level=importance+1)         # Printing iterations
+            self.printer.show(new_d, label=f"\nIter {iter+1}: d = ", importance_level=importance)         # Printing iterations
 
             if np.abs((new_d - self.shaft.d)/new_d) <= self.iter_params.max_error:                          # Exit loop if error is below specified value
                 self.shaft.d = new_d
@@ -138,7 +138,7 @@ class ShaftDesigner:
 
         if self.printer.importance_cutoff > importance:                                                     # Printing final result
             self.printer.section("#--- Final Results ---#")
-        self.printer.show(self.shaft.d, importance, label=f"{name}: d = ")
+        self.printer.show(self.shaft.d, importance_level = 0, label=f"{name}: d = ")
 
         return self.shaft.d
 

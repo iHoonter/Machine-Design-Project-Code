@@ -5,6 +5,7 @@ __all__ = [
     "shaft_designer",
     "shaft_point_data",
     "DE_shaft_stress_criterions",
+    "ShaftAnalyzer",
 ]
 
 from . import materials
@@ -14,3 +15,4 @@ from ..Common.data_printer import DataPrinter
 from .enums import LoadType, NotchType, units, SurfaceFinish
 from .shaft_point_data import ShaftPointData
 from .shaft_designer import ShaftDesigner
+from .ShaftAnalyzer import PointProperties, Shaft, ShaftAnalyzer

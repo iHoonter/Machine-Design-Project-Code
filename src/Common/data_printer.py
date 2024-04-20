@@ -18,10 +18,15 @@ class DataPrinter:
 
         All other kwargs are passed to the python print() function.
     '''
-    def __init__(self, format_spec : str, importance_cutoff : int = 0, **print_args) -> None:
+    def __init__(self, format_spec : str, importance_cutoff : int = 0, output_file : str | None = None) -> None:
         self.format_spec = format_spec
         self.importance_cutoff = importance_cutoff
-        self.print_args = print_args
+
+        if output_file != None:
+            self.print_to_file = True
+            self.file = open(output_file, mode='w')
+        else:
+            self.print_to_file = False
 
     def show(self, data, importance_level : int = 0, label : str = '', section : str = None):
         '''
@@ -48,9 +53,15 @@ class DataPrinter:
         if section != None:
             self.title(section, importance_level)
         if importance_level <= self.importance_cutoff:
-            print(label + format(data, self.format_spec), **self.print_args)
+            self._print(label + format(data, self.format_spec))
 
     def section(self, section_name : str, importance_level : int = 0):
         if importance_level <= self.importance_cutoff:
-            print(f'\n{section_name}')
+            self._print(f'\n{section_name}')
+
+    def _print(self, string: str):
+        if self.print_to_file:
+            self.file.write(string + '\n')
+        else:
+            print(string)
 
