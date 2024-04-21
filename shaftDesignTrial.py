@@ -41,14 +41,16 @@ def multPoints():
         Ta=0,
         Tm=10,
 
+        n = 1.5,
+
         points = {
-            'A' : sd.PointProperties(location=1.0, stress_concentration=sd.NotchType.Keyseat, n=1.5),
-            'B' : sd.PointProperties(location=9.0, stress_concentration=sd.NotchType.Retaining_Ring, n=1.5)
+            'A' : sd.PointProperties(location=1.0, stress_concentration=sd.NotchType.Keyseat),
+            'B' : sd.PointProperties(location=9.0, stress_concentration=sd.NotchType.Retaining_Ring)
         }
     )
 
     analyzer = sd.ShaftAnalyzer(shaft, printer=sd.DataPrinter(format_spec='.3f', importance_cutoff=4, output_file='output.txt'))
 
-    analyzer.Goodman()
+    analyzer.solveUsing([sd.Criterion.Goodman, sd.Criterion.Yielding])
 
 multPoints()

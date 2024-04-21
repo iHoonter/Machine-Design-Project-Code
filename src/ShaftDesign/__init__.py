@@ -15,4 +15,4 @@ from ..Common.data_printer import DataPrinter
 from .enums import LoadType, NotchType, units, SurfaceFinish
 from .shaft_point_data import ShaftPointData
 from .shaft_designer import ShaftDesigner
-from .ShaftAnalyzer import PointProperties, Shaft, ShaftAnalyzer
+from .ShaftAnalyzer import PointProperties, Shaft, ShaftAnalyzer, Criterion

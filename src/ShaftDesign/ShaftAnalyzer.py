@@ -6,16 +6,13 @@ from ..Common import DataPrinter
 
 from dataclasses import dataclass
 from typing import Callable
+import pandas as pd
 
 @dataclass
 class PointProperties:
     # location should be within [0, Shaft.length]
     location: float
     stress_concentration: NotchType
-    
-    # Provide only ONE of these, the other is solved for
-    d: float = 0
-    n: float = 0
 
 @dataclass
 class Shaft:
@@ -38,6 +35,10 @@ class Shaft:
 
     # Label your point properties with letters or such
     points: dict[str : PointProperties]
+
+    # Provide only ONE of these, the other is solved for
+    d: dict[str : float] | None = None
+    n: float = 0
 
     # Only used for a specific stress criterion
     true_fracture: float | None = None
@@ -69,7 +70,19 @@ class Shaft:
             return self.Tm(location)
         else:
             return self.Tm
+        
+    def __post_init__(self):
+        if self.n != 0 and self.d == None:
+            self.d = {}
+            for name in self.points.keys():
+                self.d[name] = 0
+        if self.n == 0 and self.d == None:
+            raise ValueError("Must specify either n or a dictionary of d's for each point in ShaftAnalyzer")
 
+class Criterion(Enum):
+    Goodman = 0,
+    Yielding = 1,
+    YieldingConservative = 2,
 
 class ShaftAnalyzer:
     '''
@@ -81,6 +94,7 @@ class ShaftAnalyzer:
 
         self.shaft_point_datas = {}
         self.shaft_designers = {}
+        self.point_shown = {}
         for name, properties in shaft.points.items():
             properties: PointProperties
 
@@ -96,8 +110,8 @@ class ShaftAnalyzer:
 
                 true_fracture = shaft.true_fracture,
 
-                n = properties.n,
-                d = properties.d,
+                n = shaft.n,
+                d = shaft.d[name],
 
                 notch_type = properties.stress_concentration,
 
@@ -113,32 +127,43 @@ class ShaftAnalyzer:
                 printer = self.printer
             )
 
-    def Goodman(self, importance = 1):
-        '''
-        Solve using the Goodman Criterion at each point in the shaft
-        '''
-        result = {}
+            self.criterions = []
+    
+    def solveUsing(self, criterions: list[Criterion], importance = 1):
+        
+        all_results = {}
         for name, designer in self.shaft_designers.items():
-            shaft_data = self.shaft_point_datas[name]
             designer: ShaftDesigner
-            shaft_data: ShaftPointData
+
+            point_data = self.shaft_point_datas[name]
 
             self.printer.section(f'--------\nPoint {name}\n--------', importance_level=0)
-            
+
             self.printer.section('Stresses:', importance)
-            self.printer.show(shaft_data.Ma, importance, 'Ma = ')
-            self.printer.show(shaft_data.Mm, importance, 'Mm = ')
-            self.printer.show(shaft_data.Ta, importance, 'Ta = ')
-            self.printer.show(shaft_data.Tm, importance, 'Tm = ')
+            self.printer.show(point_data.Ma, importance, 'Ma = ')
+            self.printer.show(point_data.Mm, importance, 'Mm = ')
+            self.printer.show(point_data.Ta, importance, 'Ta = ')
+            self.printer.show(point_data.Tm, importance, 'Tm = ')
 
-            result[name] = designer.Goodman(importance = importance+1)
+            point_results = []
+            for criterion in criterions:
+                match criterion:
+                    case Criterion.Goodman:
+                        point_results.append(designer.Goodman(importance = importance+1))
+                    case Criterion.Yielding:
+                        point_results.append(designer.yielding(conservative=False, importance = importance+1))
+                    case Criterion.YieldingConservative:
+                        point_results.append(designer.yielding(conservative=True, importance = importance+1))
+                
+            all_results[name] = point_results
 
-        return result
+        self.table = pd.DataFrame(all_results, index=criterions)
+
+        return self.table
 
     # def Morrow(self, importance = 0):
     # def Gerber(self, importance = 0):
     # def SWT(self, importance = 0):
-    # def yielding(self, importance = 0, conservative = True):
         
 
             

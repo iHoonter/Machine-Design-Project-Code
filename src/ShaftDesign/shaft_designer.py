@@ -39,19 +39,19 @@ class ShaftDesigner:
 
     def Goodman(self, importance = 1):
         '''Method to calculate answer using the Goodman criterion'''
-        self._begin_solving(criterion=DE_shaft_stress_criterions.Goodman, name="Goodman", importance=importance)
+        return self._begin_solving(criterion=DE_shaft_stress_criterions.Goodman, name="Goodman", importance=importance)
 
     def Morrow(self, importance = 1):
         '''Method to calculate answer using the Morrow criterion'''
-        self._begin_solving(criterion=DE_shaft_stress_criterions.Morrow, name="Goodman", importance=importance)
+        return self._begin_solving(criterion=DE_shaft_stress_criterions.Morrow, name="Goodman", importance=importance)
 
     def Gerber(self, importance = 1):
         '''Method to calculate answer using the Gerber criterion'''
-        self._begin_solving(criterion=DE_shaft_stress_criterions.Gerber, name="Gerber", importance=importance)
+        return self._begin_solving(criterion=DE_shaft_stress_criterions.Gerber, name="Gerber", importance=importance)
 
     def SWT(self, importance = 1):
         '''Method to calculate answer using the SWT criterion'''
-        self._begin_solving(criterion=DE_shaft_stress_criterions.SWT, name="SWT", importance=importance)
+        return self._begin_solving(criterion=DE_shaft_stress_criterions.SWT, name="SWT", importance=importance)
 
     def yielding(self, importance = 1, conservative = True):
         '''
@@ -63,14 +63,14 @@ class ShaftDesigner:
 
             Whether or not to use the conservative approximation for maximum stress. Conservative is sig_max = sig'a + sig'm.
         '''
-        self._begin_solving(criterion=DE_shaft_stress_criterions.yielding, name="yielding", importance=importance, conservative=conservative)
+        return self._begin_solving(criterion=DE_shaft_stress_criterions.yielding, name="yielding", importance=importance, conservative=conservative)
 
     def _begin_solving(self, criterion, name, importance, **kwargs):
         '''Internal method to call the proper method to solve for n or d, depending on what is needed'''
         if self.shaft.solve_for == 'n':
-            self._n_solver(criterion, name, importance, **kwargs)
+            return self._n_solver(criterion, name, importance, **kwargs)
         else:
-            self._d_solver(criterion, name, importance, **kwargs)
+            return self._d_solver(criterion, name, importance, **kwargs)
 
     def _n_solver(self, criterion, name, importance, **kwargs):
         '''Solves for factor of safety using the provided DE-Criterion'''

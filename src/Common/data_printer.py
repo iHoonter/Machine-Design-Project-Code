@@ -28,6 +28,10 @@ class DataPrinter:
         else:
             self.print_to_file = False
 
+    def __del__(self):
+        if self.print_to_file:
+            self.file.close()
+
     def show(self, data, importance_level : int = 0, label : str = '', section : str = None):
         '''
         Method to print data using format specified by printer object

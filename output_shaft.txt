@@ -1,0 +1,120 @@
+
+--------
+Point Q
+--------
+
+Stresses:
+Ma = 125.371
+Mm = 0.000
+Ta = 0.000
+Tm = 0.000
+Goodman: d = 0.547
+yielding: d = 0.423
+
+--------
+Point R
+--------
+
+Stresses:
+Ma = 292.532
+Mm = 0.000
+Ta = 0.000
+Tm = 0.000
+Goodman: d = 0.686
+yielding: d = 0.529
+
+--------
+Point S
+--------
+
+Stresses:
+Ma = 376.112
+Mm = 0.000
+Ta = 0.000
+Tm = 0.000
+Goodman: d = 0.749
+yielding: d = 0.576
+
+--------
+Point T
+--------
+
+Stresses:
+Ma = 283.023
+Mm = 0.000
+Ta = 0.000
+Tm = 1487.780
+Goodman: d = 1.061
+yielding: d = 1.051
+
+--------
+Point U
+--------
+
+Stresses:
+Ma = 254.721
+Mm = 0.000
+Ta = 0.000
+Tm = 1487.780
+Goodman: d = 1.098
+yielding: d = 1.052
+
+--------
+Point V
+--------
+
+Stresses:
+Ma = 198.116
+Mm = 0.000
+Ta = 0.000
+Tm = 1487.780
+Goodman: d = 0.906
+yielding: d = 0.897
+
+--------
+Point W
+--------
+
+Stresses:
+Ma = 84.907
+Mm = 0.000
+Ta = 0.000
+Tm = 1487.780
+Goodman: d = 0.915
+yielding: d = 0.939
+
+--------
+Point X
+--------
+
+Stresses:
+Ma = 0.000
+Mm = 0.000
+Ta = 0.000
+Tm = 1487.780
+Goodman: d = 0.913
+yielding: d = 0.971
+
+--------
+Point Y
+--------
+
+Stresses:
+Ma = 0.000
+Mm = 0.000
+Ta = 0.000
+Tm = 1487.780
+Goodman: d = 0.800
+yielding: d = 0.852
+
+--------
+Point Z
+--------
+
+Stresses:
+Ma = 0.000
+Mm = 0.000
+Ta = 0.000
+Tm = 1487.780
+Goodman: d = 0.936
+yielding: d = 0.998
