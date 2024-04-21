@@ -14,6 +14,7 @@ class NotchType(Enum):
     Well_Rounded = Wide = 1
     Keyseat = Keyway = 2
     Retaining_Ring = 3
+    Nothing = 4
 
 class SurfaceFinish(Enum):
     Ground = 0

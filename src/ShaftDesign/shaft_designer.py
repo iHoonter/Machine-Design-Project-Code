@@ -220,6 +220,11 @@ class ShaftDesigner:
         '''
         self.printer.section("Stress Concentrations", importance+1)
 
+        if self.shaft.notch_type == en.NotchType.Nothing:
+            self.printer.show(1, label = "No stress concentration, Kf = Kfs = ", importance_level=importance+1)
+            self.shaft.Kt = self.shaft.Kts = self.shaft.Kf = self.shaft.Kfs = 1
+            return (1, 1)
+
         def find_Kt_T71(load : en.LoadType, notch : en.NotchType):
             '''Find initial theoretical stress concentrations based on Table 7-1'''
             Table_71 = np.array([
