@@ -1,0 +1,430 @@
+
+--------
+Point G
+--------
+
+Stresses:
+Ma = 0.000
+Mm = 0.000
+Ta = 0.000
+Tm = 199.580
+
+#--- Solving for d using Goodman ---#
+Iter 0: d = 3.000
+Se = 10.118
+Kf = 1.763
+Kfs = 2.459
+
+Iter 1: d = 0.497
+Se = 12.516
+Kf = 1.514
+Kfs = 2.046
+
+Iter 2: d = 0.467
+Se = 12.598
+Kf = 1.506
+Kfs = 2.031
+
+Iter 3: d = 0.466
+Goodman: d = 0.466
+
+#--- Solving for d using yielding ---#
+Iter 0: d = 3.000
+Se = 10.118
+Kf = 1.763
+Kfs = 2.459
+
+Iter 1: d = 0.528
+Se = 12.433
+Kf = 1.523
+Kfs = 2.061
+
+Iter 2: d = 0.498
+Se = 12.512
+Kf = 1.515
+Kfs = 2.047
+
+Iter 3: d = 0.497
+yielding: d = 0.497
+
+--------
+Point H
+--------
+
+Stresses:
+Ma = 0.000
+Mm = 0.000
+Ta = 0.000
+Tm = 199.580
+
+#--- Solving for d using Goodman ---#
+Iter 0: d = 3.000
+Se = 10.118
+Kf = 1.573
+Kfs = 1.429
+
+Iter 1: d = 0.414
+Se = 12.761
+Kf = 1.439
+Kfs = 1.346
+
+Iter 2: d = 0.406
+Goodman: d = 0.406
+
+#--- Solving for d using yielding ---#
+Iter 0: d = 3.000
+Se = 10.118
+Kf = 1.573
+Kfs = 1.429
+
+Iter 1: d = 0.441
+Se = 12.676
+Kf = 1.444
+Kfs = 1.349
+
+Iter 2: d = 0.433
+yielding: d = 0.433
+
+--------
+Point I
+--------
+
+Stresses:
+Ma = 0.000
+Mm = 0.000
+Ta = 0.000
+Tm = 199.580
+
+#--- Solving for d using Goodman ---#
+Iter 0: d = 3.000
+Se = 10.118
+Kf = 2.808
+Kfs = 2.048
+
+Iter 1: d = 0.467
+Se = 12.598
+Kf = 2.808
+Kfs = 2.048
+
+Iter 2: d = 0.467
+Goodman: d = 0.467
+
+#--- Solving for d using yielding ---#
+Iter 0: d = 3.000
+Se = 10.118
+Kf = 2.808
+Kfs = 2.048
+
+Iter 1: d = 0.497
+Se = 12.515
+Kf = 2.808
+Kfs = 2.048
+
+Iter 2: d = 0.497
+yielding: d = 0.497
+
+--------
+Point J
+--------
+
+Stresses:
+Ma = 60.393
+Mm = 0.000
+Ta = 0.000
+Tm = 199.580
+
+#--- Solving for d using Goodman ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 2.137
+Kfs = 1.875
+
+Iter 1: d = 0.593
+Se = 20.816
+Kf = 1.805
+Kfs = 1.654
+
+Iter 2: d = 0.546
+Se = 21.002
+Kf = 1.787
+Kfs = 1.642
+
+Iter 3: d = 0.543
+Goodman: d = 0.543
+
+#--- Solving for d using yielding ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 2.137
+Kfs = 1.875
+
+Iter 1: d = 0.540
+Se = 21.025
+Kf = 1.785
+Kfs = 1.640
+
+Iter 2: d = 0.514
+Se = 21.136
+Kf = 1.774
+Kfs = 1.633
+
+Iter 3: d = 0.513
+yielding: d = 0.513
+
+--------
+Point K
+--------
+
+Stresses:
+Ma = 140.916
+Mm = 0.000
+Ta = 0.000
+Tm = 199.580
+
+#--- Solving for d using Goodman ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 1.573
+Kfs = 1.429
+
+Iter 1: d = 0.645
+Se = 20.628
+Kf = 1.474
+Kfs = 1.368
+
+Iter 2: d = 0.606
+Se = 20.769
+Kf = 1.469
+Kfs = 1.365
+
+Iter 3: d = 0.604
+Goodman: d = 0.604
+
+#--- Solving for d using yielding ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 1.573
+Kfs = 1.429
+
+Iter 1: d = 0.546
+Se = 21.000
+Kf = 1.461
+Kfs = 1.360
+
+Iter 2: d = 0.535
+yielding: d = 0.535
+
+--------
+Point L
+--------
+
+Stresses:
+Ma = 181.178
+Mm = 0.000
+Ta = 0.000
+Tm = 199.580
+
+#--- Solving for d using Goodman ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 2.808
+Kfs = 2.048
+
+Iter 1: d = 0.822
+Se = 20.101
+Kf = 2.808
+Kfs = 2.048
+
+Iter 2: d = 0.788
+Goodman: d = 0.788
+
+#--- Solving for d using yielding ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 2.808
+Kfs = 2.048
+
+Iter 1: d = 0.669
+Se = 20.548
+Kf = 2.808
+Kfs = 2.048
+
+Iter 2: d = 0.669
+yielding: d = 0.669
+
+--------
+Point M
+--------
+
+Stresses:
+Ma = 201.309
+Mm = 0.000
+Ta = 0.000
+Tm = 199.580
+
+#--- Solving for d using Goodman ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 1.763
+Kfs = 2.459
+
+Iter 1: d = 0.760
+Se = 20.270
+Kf = 1.575
+Kfs = 2.151
+
+Iter 2: d = 0.702
+Se = 20.442
+Kf = 1.564
+Kfs = 2.132
+
+Iter 3: d = 0.699
+Goodman: d = 0.699
+
+#--- Solving for d using yielding ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 1.763
+Kfs = 2.459
+
+Iter 1: d = 0.647
+Se = 20.622
+Kf = 1.552
+Kfs = 2.112
+
+Iter 2: d = 0.617
+yielding: d = 0.617
+
+--------
+Point N
+--------
+
+Stresses:
+Ma = 207.601
+Mm = 0.000
+Ta = 0.000
+Tm = 0.000
+
+#--- Solving for d using Goodman ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 1.573
+Kfs = 1.429
+
+Iter 1: d = 0.663
+Se = 20.569
+Kf = 1.476
+Kfs = 1.369
+
+Iter 2: d = 0.611
+Se = 20.750
+Kf = 1.470
+Kfs = 1.366
+
+Iter 3: d = 0.608
+Goodman: d = 0.608
+
+#--- Solving for d using yielding ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 1.573
+Kfs = 1.429
+
+Iter 1: d = 0.484
+Se = 21.272
+Kf = 1.451
+Kfs = 1.354
+
+Iter 2: d = 0.471
+yielding: d = 0.471
+
+--------
+Point O
+--------
+
+Stresses:
+Ma = 161.467
+Mm = 0.000
+Ta = 0.000
+Tm = 0.000
+
+#--- Solving for d using Goodman ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 1.573
+Kfs = 1.429
+
+Iter 1: d = 0.609
+Se = 20.754
+Kf = 1.469
+Kfs = 1.365
+
+Iter 2: d = 0.559
+Se = 20.947
+Kf = 1.463
+Kfs = 1.361
+
+Iter 3: d = 0.556
+Goodman: d = 0.556
+
+#--- Solving for d using yielding ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 1.573
+Kfs = 1.429
+
+Iter 1: d = 0.445
+Se = 21.464
+Kf = 1.445
+Kfs = 1.349
+
+Iter 2: d = 0.433
+yielding: d = 0.433
+
+--------
+Point P
+--------
+
+Stresses:
+Ma = 69.200
+Mm = 0.000
+Ta = 0.000
+Tm = 0.000
+
+#--- Solving for d using Goodman ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 2.137
+Kfs = 1.875
+
+Iter 1: d = 0.509
+Se = 21.159
+Kf = 1.772
+Kfs = 1.631
+
+Iter 2: d = 0.446
+Se = 21.461
+Kf = 1.744
+Kfs = 1.611
+
+Iter 3: d = 0.441
+Goodman: d = 0.441
+
+#--- Solving for d using yielding ---#
+Iter 0: d = 3.000
+Se = 17.149
+Kf = 2.137
+Kfs = 1.875
+
+Iter 1: d = 0.372
+Se = 21.882
+Kf = 1.707
+Kfs = 1.584
+
+Iter 2: d = 0.345
+Se = 22.058
+Kf = 1.691
+Kfs = 1.573
+
+Iter 3: d = 0.344
+yielding: d = 0.344
