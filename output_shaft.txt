@@ -9,43 +9,51 @@ Mm = 0.000
 Ta = 0.000
 Tm = 0.000
 
-#--- Solving for d using Goodman ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 2.137
-Kfs = 1.875
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.938
+kc = 1.000
+Se = 20.997
 
-Iter 1: d = 0.620
-Se = 20.715
-Kf = 1.814
-Kfs = 1.661
+Stress Concentrations
+Kt = 2.700
+Kts = 2.200
+r = 0.011
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
+Kf = 1.787
+Kfs = 1.642
 
-Iter 2: d = 0.552
-Se = 20.977
-Kf = 1.789
-Kfs = 1.643
+#--- Solving for n using Goodman criterion ---#
+Se = 20.997
+Kf = 1.787
+Goodman: n = 1.503
 
-Iter 3: d = 0.547
-Goodman: d = 0.547
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.938
+kc = 1.000
+Se = 20.997
 
-#--- Solving for d using yielding ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 2.137
-Kfs = 1.875
+Stress Concentrations
+Kt = 2.700
+Kts = 2.200
+r = 0.011
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
+Kf = 1.787
+Kfs = 1.642
 
-Iter 1: d = 0.453
-Se = 21.423
-Kf = 1.748
-Kfs = 1.614
-
-Iter 2: d = 0.424
-Se = 21.577
-Kf = 1.734
-Kfs = 1.604
-
-Iter 3: d = 0.423
-yielding: d = 0.423
+#--- Solving for n using yielding criterion ---#
+Se = 20.997
+Kf = 1.787
+yielding: n = 3.150
 
 --------
 Point R
@@ -57,38 +65,51 @@ Mm = 0.000
 Ta = 0.000
 Tm = 0.000
 
-#--- Solving for d using Goodman ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 1.573
-Kfs = 1.429
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.915
+kc = 1.000
+Se = 20.494
 
-Iter 1: d = 0.743
-Se = 20.319
-Kf = 1.485
-Kfs = 1.375
-
-Iter 2: d = 0.689
-Se = 20.485
+Stress Concentrations
+Kt = 1.700
+Kts = 1.500
+r = 0.069
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
 Kf = 1.479
 Kfs = 1.371
 
-Iter 3: d = 0.686
-Goodman: d = 0.686
+#--- Solving for n using Goodman criterion ---#
+Se = 20.494
+Kf = 1.479
+Goodman: n = 1.501
 
-#--- Solving for d using yielding ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 1.573
-Kfs = 1.429
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.915
+kc = 1.000
+Se = 20.494
 
-Iter 1: d = 0.543
-Se = 21.014
-Kf = 1.460
-Kfs = 1.360
+Stress Concentrations
+Kt = 1.700
+Kts = 1.500
+r = 0.069
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
+Kf = 1.479
+Kfs = 1.371
 
-Iter 2: d = 0.529
-yielding: d = 0.529
+#--- Solving for n using yielding criterion ---#
+Se = 20.494
+Kf = 1.479
+yielding: n = 3.223
 
 --------
 Point S
@@ -100,38 +121,51 @@ Mm = 0.000
 Ta = 0.000
 Tm = 0.000
 
-#--- Solving for d using Goodman ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 1.573
-Kfs = 1.429
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.870
+kc = 1.000
+Se = 19.487
 
-Iter 1: d = 0.808
-Se = 20.138
-Kf = 1.491
-Kfs = 1.379
+Stress Concentrations
+Kt = 1.700
+Kts = 1.500
+r = 0.110
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
+Kf = 1.513
+Kfs = 1.392
 
-Iter 2: d = 0.752
-Se = 20.293
-Kf = 1.485
-Kfs = 1.376
+#--- Solving for n using Goodman criterion ---#
+Se = 19.487
+Kf = 1.513
+Goodman: n = 4.456
 
-Iter 3: d = 0.749
-Goodman: d = 0.749
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.870
+kc = 1.000
+Se = 19.487
 
-#--- Solving for d using yielding ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 1.573
-Kfs = 1.429
+Stress Concentrations
+Kt = 1.700
+Kts = 1.500
+r = 0.110
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
+Kf = 1.513
+Kfs = 1.392
 
-Iter 1: d = 0.590
-Se = 20.826
-Kf = 1.467
-Kfs = 1.364
-
-Iter 2: d = 0.576
-yielding: d = 0.576
+#--- Solving for n using yielding criterion ---#
+Se = 19.487
+Kf = 1.513
+yielding: n = 10.061
 
 --------
 Point T
@@ -143,33 +177,51 @@ Mm = 0.000
 Ta = 0.000
 Tm = 1487.780
 
-#--- Solving for d using Goodman ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 1.763
-Kfs = 2.459
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.870
+kc = 1.000
+Se = 19.487
 
-Iter 1: d = 1.107
-Se = 19.470
-Kf = 1.628
-Kfs = 2.242
+Stress Concentrations
+Kt = 2.140
+Kts = 3.000
+r = 0.022
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
+Kf = 1.627
+Kfs = 2.240
 
-Iter 2: d = 1.061
-Goodman: d = 1.061
+#--- Solving for n using Goodman criterion ---#
+Se = 19.487
+Kf = 1.627
+Goodman: n = 1.666
 
-#--- Solving for d using yielding ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 1.763
-Kfs = 2.459
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.870
+kc = 1.000
+Se = 19.487
 
-Iter 1: d = 1.084
-Se = 19.514
-Kf = 1.625
-Kfs = 2.236
+Stress Concentrations
+Kt = 2.140
+Kts = 3.000
+r = 0.022
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
+Kf = 1.627
+Kfs = 2.240
 
-Iter 2: d = 1.051
-yielding: d = 1.051
+#--- Solving for n using yielding criterion ---#
+Se = 19.487
+Kf = 1.627
+yielding: n = 1.710
 
 --------
 Point U
@@ -181,33 +233,51 @@ Mm = 0.000
 Ta = 0.000
 Tm = 1487.780
 
-#--- Solving for d using Goodman ---#
-Iter 0: d = 3.000
-Se = 17.149
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.870
+kc = 1.000
+Se = 19.487
+
+Stress Concentrations
+Kt = 5.000
+Kts = 3.000
+r = 0.010
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
 Kf = 2.808
 Kfs = 2.048
 
-Iter 1: d = 1.118
-Se = 19.450
+#--- Solving for n using Goodman criterion ---#
+Se = 19.487
+Kf = 2.808
+Goodman: n = 1.504
+
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.870
+kc = 1.000
+Se = 19.487
+
+Stress Concentrations
+Kt = 5.000
+Kts = 3.000
+r = 0.010
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
 Kf = 2.808
 Kfs = 2.048
 
-Iter 2: d = 1.098
-Goodman: d = 1.098
-
-#--- Solving for d using yielding ---#
-Iter 0: d = 3.000
-Se = 17.149
+#--- Solving for n using yielding criterion ---#
+Se = 19.487
 Kf = 2.808
-Kfs = 2.048
-
-Iter 1: d = 1.052
-Se = 19.577
-Kf = 2.808
-Kfs = 2.048
-
-Iter 2: d = 1.052
-yielding: d = 1.052
+yielding: n = 1.707
 
 --------
 Point V
@@ -219,33 +289,39 @@ Mm = 0.000
 Ta = 0.000
 Tm = 1487.780
 
-#--- Solving for d using Goodman ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 1.573
-Kfs = 1.429
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.879
+kc = 1.000
+Se = 19.686
 
-Iter 1: d = 0.932
-Se = 19.833
-Kf = 1.501
-Kfs = 1.385
+Stress Concentrations
+No stress concentration, Kf = Kfs = 1.000
 
-Iter 2: d = 0.906
-Goodman: d = 0.906
+#--- Solving for n using Goodman criterion ---#
+Se = 19.686
+Kf = 1.000
+Goodman: n = 2.843
 
-#--- Solving for d using yielding ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 1.573
-Kfs = 1.429
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.879
+kc = 1.000
+Se = 19.686
 
-Iter 1: d = 0.908
-Se = 19.889
-Kf = 1.499
-Kfs = 1.384
+Stress Concentrations
+No stress concentration, Kf = Kfs = 1.000
 
-Iter 2: d = 0.897
-yielding: d = 0.897
+#--- Solving for n using yielding criterion ---#
+Se = 19.686
+Kf = 1.000
+yielding: n = 2.893
 
 --------
 Point W
@@ -257,33 +333,51 @@ Mm = 0.000
 Ta = 0.000
 Tm = 1487.780
 
-#--- Solving for d using Goodman ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 2.137
-Kfs = 1.875
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.879
+kc = 1.000
+Se = 19.686
 
-Iter 1: d = 0.950
-Se = 19.791
-Kf = 1.905
-Kfs = 1.723
+Stress Concentrations
+Kt = 2.700
+Kts = 2.200
+r = 0.020
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
+Kf = 1.915
+Kfs = 1.730
 
-Iter 2: d = 0.915
-Goodman: d = 0.915
+#--- Solving for n using Goodman criterion ---#
+Se = 19.686
+Kf = 1.915
+Goodman: n = 1.942
 
-#--- Solving for d using yielding ---#
-Iter 0: d = 3.000
-Se = 17.149
-Kf = 2.137
-Kfs = 1.875
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.879
+kc = 1.000
+Se = 19.686
 
-Iter 1: d = 0.966
-Se = 19.756
-Kf = 1.908
-Kfs = 1.726
+Stress Concentrations
+Kt = 2.700
+Kts = 2.200
+r = 0.020
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
+Kf = 1.915
+Kfs = 1.730
 
-Iter 2: d = 0.939
-yielding: d = 0.939
+#--- Solving for n using yielding criterion ---#
+Se = 19.686
+Kf = 1.915
+yielding: n = 1.798
 
 --------
 Point X
@@ -295,33 +389,51 @@ Mm = 0.000
 Ta = 0.000
 Tm = 1487.780
 
-#--- Solving for d using Goodman ---#
-Iter 0: d = 3.000
-Se = 10.118
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.879
+kc = 0.590
+Se = 11.615
+
+Stress Concentrations
+Kt = 5.000
+Kts = 3.000
+r = 0.010
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
 Kf = 2.808
 Kfs = 2.048
 
-Iter 1: d = 0.913
-Se = 11.727
+#--- Solving for n using Goodman criterion ---#
+Se = 11.615
+Kf = 2.808
+Goodman: n = 1.963
+
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.879
+kc = 0.590
+Se = 11.615
+
+Stress Concentrations
+Kt = 5.000
+Kts = 3.000
+r = 0.010
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
 Kf = 2.808
 Kfs = 2.048
 
-Iter 2: d = 0.913
-Goodman: d = 0.913
-
-#--- Solving for d using yielding ---#
-Iter 0: d = 3.000
-Se = 10.118
+#--- Solving for n using yielding criterion ---#
+Se = 11.615
 Kf = 2.808
-Kfs = 2.048
-
-Iter 1: d = 0.971
-Se = 11.649
-Kf = 2.808
-Kfs = 2.048
-
-Iter 2: d = 0.971
-yielding: d = 0.971
+yielding: n = 1.630
 
 --------
 Point Y
@@ -333,33 +445,39 @@ Mm = 0.000
 Ta = 0.000
 Tm = 1487.780
 
-#--- Solving for d using Goodman ---#
-Iter 0: d = 3.000
-Se = 10.118
-Kf = 1.573
-Kfs = 1.429
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.879
+kc = 0.590
+Se = 11.615
 
-Iter 1: d = 0.810
-Se = 11.879
-Kf = 1.491
-Kfs = 1.379
+Stress Concentrations
+No stress concentration, Kf = Kfs = 1.000
 
-Iter 2: d = 0.800
-Goodman: d = 0.800
+#--- Solving for n using Goodman criterion ---#
+Se = 11.615
+Kf = 1.000
+Goodman: n = 4.020
 
-#--- Solving for d using yielding ---#
-Iter 0: d = 3.000
-Se = 10.118
-Kf = 1.573
-Kfs = 1.429
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.879
+kc = 0.590
+Se = 11.615
 
-Iter 1: d = 0.861
-Se = 11.800
-Kf = 1.495
-Kfs = 1.382
+Stress Concentrations
+No stress concentration, Kf = Kfs = 1.000
 
-Iter 2: d = 0.852
-yielding: d = 0.852
+#--- Solving for n using yielding criterion ---#
+Se = 11.615
+Kf = 1.000
+yielding: n = 3.337
 
 --------
 Point Z
@@ -371,30 +489,48 @@ Mm = 0.000
 Ta = 0.000
 Tm = 1487.780
 
-#--- Solving for d using Goodman ---#
-Iter 0: d = 3.000
-Se = 10.118
-Kf = 1.763
-Kfs = 2.459
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.879
+kc = 0.590
+Se = 11.615
 
-Iter 1: d = 0.970
-Se = 11.651
-Kf = 1.610
-Kfs = 2.210
+Stress Concentrations
+Kt = 2.140
+Kts = 3.000
+r = 0.020
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
+Kf = 1.614
+Kfs = 2.217
 
-Iter 2: d = 0.936
-Goodman: d = 0.936
+#--- Solving for n using Goodman criterion ---#
+Se = 11.615
+Kf = 1.614
+Goodman: n = 1.813
 
-#--- Solving for d using yielding ---#
-Iter 0: d = 3.000
-Se = 10.118
-Kf = 1.763
-Kfs = 2.459
+Endurance Limit
+S'e = 26.500
+a = 2.000
+b = -0.217
+ka = 0.845
+kb = 0.879
+kc = 0.590
+Se = 11.615
 
-Iter 1: d = 1.032
-Se = 11.574
-Kf = 1.618
-Kfs = 2.225
+Stress Concentrations
+Kt = 2.140
+Kts = 3.000
+r = 0.020
+sqrt(a) [bending] = 0.121
+sqrt(a) [torsion] = 0.091
+Kf = 1.614
+Kfs = 2.217
 
-Iter 2: d = 0.998
-yielding: d = 0.998
+#--- Solving for n using yielding criterion ---#
+Se = 11.615
+Kf = 1.614
+yielding: n = 1.505

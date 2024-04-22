@@ -12,44 +12,44 @@ Tm = 199.580
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.947
+kb = 0.825
 kc = 0.590
-Se = 12.515
+Se = 10.900
 
 Stress Concentrations
 Kt = 2.140
 Kts = 3.000
-r = 0.010
+r = 0.036
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.515
-Kfs = 2.046
+Kf = 1.696
+Kfs = 2.353
 
 #--- Solving for n using Goodman criterion ---#
-Se = 12.515
-Kf = 1.515
-Goodman: n = 1.807
+Se = 10.900
+Kf = 1.696
+Goodman: n = 75.531
 
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.947
+kb = 0.825
 kc = 0.590
-Se = 12.515
+Se = 10.900
 
 Stress Concentrations
 Kt = 2.140
 Kts = 3.000
-r = 0.010
+r = 0.036
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.515
-Kfs = 2.046
+Kf = 1.696
+Kfs = 2.353
 
 #--- Solving for n using yielding criterion ---#
-Se = 12.515
-Kf = 1.515
-yielding: n = 1.500
+Se = 10.900
+Kf = 1.696
+yielding: n = 62.705
 
 --------
 Point H
@@ -64,44 +64,44 @@ Tm = 199.580
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.938
+kb = 0.827
 kc = 0.590
-Se = 12.397
+Se = 10.926
 
 Stress Concentrations
 Kt = 1.700
 Kts = 1.500
-r = 0.054
+r = 0.177
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.461
-Kfs = 1.360
+Kf = 1.543
+Kfs = 1.411
 
 #--- Solving for n using Goodman criterion ---#
-Se = 12.397
-Kf = 1.461
-Goodman: n = 3.549
+Se = 10.926
+Kf = 1.543
+Goodman: n = 118.067
 
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.938
+kb = 0.827
 kc = 0.590
-Se = 12.397
+Se = 10.926
 
 Stress Concentrations
 Kt = 1.700
 Kts = 1.500
-r = 0.054
+r = 0.177
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.461
-Kfs = 1.360
+Kf = 1.543
+Kfs = 1.411
 
 #--- Solving for n using yielding criterion ---#
-Se = 12.397
-Kf = 1.461
-yielding: n = 2.947
+Se = 10.926
+Kf = 1.543
+yielding: n = 98.018
 
 --------
 Point I
@@ -116,9 +116,9 @@ Tm = 199.580
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.938
+kb = 0.827
 kc = 0.590
-Se = 12.397
+Se = 10.926
 
 Stress Concentrations
 Kt = 5.000
@@ -130,16 +130,16 @@ Kf = 2.808
 Kfs = 2.048
 
 #--- Solving for n using Goodman criterion ---#
-Se = 12.397
+Se = 10.926
 Kf = 2.808
-Goodman: n = 2.357
+Goodman: n = 81.368
 
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.938
+kb = 0.827
 kc = 0.590
-Se = 12.397
+Se = 10.926
 
 Stress Concentrations
 Kt = 5.000
@@ -151,9 +151,9 @@ Kf = 2.808
 Kfs = 2.048
 
 #--- Solving for n using yielding criterion ---#
-Se = 12.397
+Se = 10.926
 Kf = 2.808
-yielding: n = 1.957
+yielding: n = 67.551
 
 --------
 Point J
@@ -168,44 +168,44 @@ Tm = 199.580
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.938
+kb = 0.827
 kc = 1.000
-Se = 21.011
+Se = 18.518
 
 Stress Concentrations
 Kt = 2.700
 Kts = 2.200
-r = 0.011
+r = 0.035
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.786
-Kfs = 1.641
+Kf = 2.034
+Kfs = 1.809
 
 #--- Solving for n using Goodman criterion ---#
-Se = 21.011
-Kf = 1.786
-Goodman: n = 1.501
+Se = 18.518
+Kf = 2.034
+Goodman: n = 43.355
 
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.938
+kb = 0.827
 kc = 1.000
-Se = 21.011
+Se = 18.518
 
 Stress Concentrations
 Kt = 2.700
 Kts = 2.200
-r = 0.011
+r = 0.035
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.786
-Kfs = 1.641
+Kf = 2.034
+Kfs = 1.809
 
 #--- Solving for n using yielding criterion ---#
-Se = 21.011
-Kf = 1.786
-yielding: n = 1.769
+Se = 18.518
+Kf = 2.034
+yielding: n = 54.896
 
 --------
 Point K
@@ -220,44 +220,44 @@ Tm = 199.580
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.928
+kb = 0.807
 kc = 1.000
-Se = 20.774
+Se = 18.072
 
 Stress Concentrations
 Kt = 1.700
 Kts = 1.500
-r = 0.060
+r = 0.215
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.469
-Kfs = 1.365
+Kf = 1.555
+Kfs = 1.418
 
 #--- Solving for n using Goodman criterion ---#
-Se = 20.774
-Kf = 1.469
-Goodman: n = 1.500
+Se = 18.072
+Kf = 1.555
+Goodman: n = 58.147
 
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.928
+kb = 0.807
 kc = 1.000
-Se = 20.774
+Se = 18.072
 
 Stress Concentrations
 Kt = 1.700
 Kts = 1.500
-r = 0.060
+r = 0.215
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.469
-Kfs = 1.365
+Kf = 1.555
+Kfs = 1.418
 
 #--- Solving for n using yielding criterion ---#
-Se = 20.774
-Kf = 1.469
-yielding: n = 2.149
+Se = 18.072
+Kf = 1.555
+yielding: n = 92.312
 
 --------
 Point L
@@ -272,9 +272,9 @@ Tm = 199.580
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.902
+kb = 0.791
 kc = 1.000
-Se = 20.192
+Se = 17.706
 
 Stress Concentrations
 Kt = 5.000
@@ -286,16 +286,16 @@ Kf = 2.808
 Kfs = 2.048
 
 #--- Solving for n using Goodman criterion ---#
-Se = 20.192
+Se = 17.706
 Kf = 2.808
-Goodman: n = 1.505
+Goodman: n = 40.638
 
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.902
+kb = 0.791
 kc = 1.000
-Se = 20.192
+Se = 17.706
 
 Stress Concentrations
 Kt = 5.000
@@ -307,9 +307,9 @@ Kf = 2.808
 Kfs = 2.048
 
 #--- Solving for n using yielding criterion ---#
-Se = 20.192
+Se = 17.706
 Kf = 2.808
-yielding: n = 2.447
+yielding: n = 73.398
 
 --------
 Point M
@@ -324,44 +324,44 @@ Tm = 199.580
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.902
+kb = 0.791
 kc = 1.000
-Se = 20.192
+Se = 17.706
 
 Stress Concentrations
 Kt = 2.140
 Kts = 3.000
-r = 0.016
+r = 0.049
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.580
-Kfs = 2.160
+Kf = 1.737
+Kfs = 2.417
 
 #--- Solving for n using Goodman criterion ---#
-Se = 20.192
-Kf = 1.580
-Goodman: n = 2.105
+Se = 17.706
+Kf = 1.737
+Goodman: n = 52.091
 
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.902
+kb = 0.791
 kc = 1.000
-Se = 20.192
+Se = 17.706
 
 Stress Concentrations
 Kt = 2.140
 Kts = 3.000
-r = 0.016
+r = 0.049
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.580
-Kfs = 2.160
+Kf = 1.737
+Kfs = 2.417
 
 #--- Solving for n using yielding criterion ---#
-Se = 20.192
-Kf = 1.580
-yielding: n = 3.054
+Se = 17.706
+Kf = 1.737
+yielding: n = 82.512
 
 --------
 Point N
@@ -376,44 +376,44 @@ Tm = 0.000
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.902
+kb = 0.791
 kc = 1.000
-Se = 20.192
+Se = 17.706
 
 Stress Concentrations
 Kt = 1.700
 Kts = 1.500
-r = 0.079
+r = 0.245
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.489
-Kfs = 1.378
+Kf = 1.562
+Kfs = 1.422
 
 #--- Solving for n using Goodman criterion ---#
-Se = 20.192
-Kf = 1.489
-Goodman: n = 3.135
+Se = 17.706
+Kf = 1.562
+Goodman: n = 78.567
 
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.902
+kb = 0.791
 kc = 1.000
-Se = 20.192
+Se = 17.706
 
 Stress Concentrations
 Kt = 1.700
 Kts = 1.500
-r = 0.079
+r = 0.245
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.489
-Kfs = 1.378
+Kf = 1.562
+Kfs = 1.422
 
 #--- Solving for n using yielding criterion ---#
-Se = 20.192
-Kf = 1.489
-yielding: n = 6.831
+Se = 17.706
+Kf = 1.562
+yielding: n = 195.240
 
 --------
 Point O
@@ -428,44 +428,44 @@ Tm = 0.000
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.936
+kb = 0.760
 kc = 1.000
-Se = 20.957
+Se = 17.017
 
 Stress Concentrations
 Kt = 1.700
 Kts = 1.500
-r = 0.056
+r = 0.315
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.462
-Kfs = 1.361
+Kf = 1.576
+Kfs = 1.430
 
 #--- Solving for n using Goodman criterion ---#
-Se = 20.957
-Kf = 1.462
-Goodman: n = 1.501
+Se = 17.017
+Kf = 1.576
+Goodman: n = 205.543
 
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.936
+kb = 0.760
 kc = 1.000
-Se = 20.957
+Se = 17.017
 
 Stress Concentrations
 Kt = 1.700
 Kts = 1.500
-r = 0.056
+r = 0.315
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.462
-Kfs = 1.361
+Kf = 1.576
+Kfs = 1.430
 
 #--- Solving for n using yielding criterion ---#
-Se = 20.957
-Kf = 1.462
-yielding: n = 3.152
+Se = 17.017
+Kf = 1.576
+yielding: n = 531.464
 
 --------
 Point P
@@ -480,41 +480,41 @@ Tm = 0.000
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.959
+kb = 0.763
 kc = 1.000
-Se = 21.484
+Se = 17.079
 
 Stress Concentrations
 Kt = 2.700
 Kts = 2.200
-r = 0.009
+r = 0.062
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.742
-Kfs = 1.610
+Kf = 2.142
+Kfs = 1.878
 
 #--- Solving for n using Goodman criterion ---#
-Se = 21.484
-Kf = 1.742
-Goodman: n = 1.503
+Se = 17.079
+Kf = 2.142
+Goodman: n = 330.191
 
 Endurance Limit
 S'e = 26.500
 ka = 0.845
-kb = 0.959
+kb = 0.763
 kc = 1.000
-Se = 21.484
+Se = 17.079
 
 Stress Concentrations
 Kt = 2.700
 Kts = 2.200
-r = 0.009
+r = 0.062
 sqrt(a) [bending] = 0.121
 sqrt(a) [torsion] = 0.091
-Kf = 1.742
-Kfs = 1.610
+Kf = 2.142
+Kfs = 1.878
 
 #--- Solving for n using yielding criterion ---#
-Se = 21.484
-Kf = 1.742
-yielding: n = 3.079
+Se = 17.079
+Kf = 2.142
+yielding: n = 850.648

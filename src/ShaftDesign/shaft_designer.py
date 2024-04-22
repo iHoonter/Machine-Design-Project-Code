@@ -115,6 +115,9 @@ class ShaftDesigner:
 
         self.printer.section(f"#--- Solving for d using {name} ---#", importance_level=importance)
 
+        iteration_print_vals = ""
+        
+
         iter = 0
         self.printer.show(self.shaft.d, label=f"Iter {iter}: d = ", importance_level=importance)          # Printing first iteration
         while True:
@@ -138,6 +141,7 @@ class ShaftDesigner:
 
         if self.printer.importance_cutoff > importance:                                                     # Printing final result
             self.printer.section("#--- Final Results ---#")
+
         self.printer.show(self.shaft.d, importance_level = 0, label=f"{name}: d = ")
 
         return self.shaft.d
